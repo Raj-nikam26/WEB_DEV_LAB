@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assignments Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fff3e0, #e1f5fe);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      overflow: hidden;
+      max-width: 960px;
+      width: 100%;
+    }
+
+    .info-panel {
+      background: linear-gradient(135deg, #ff6f61, #ffccbc);
+      color: white;
+      padding: 40px 25px;
+      flex: 1 1 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .info-panel h1 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    .info-panel p {
+      margin: 6px 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .assignments-panel {
+      flex: 2 1 400px;
+      padding: 40px 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #f9f9f9;
+    }
+
+    .assignments-panel h2 {
+      color: #00796b;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .btn-html {
+      background-color: #ff8a65;
+      color: #fff;
+    }
+
+    .btn-css {
+      background-color: #4db6ac;
+      color: #fff;
+    }
+
+    .btn-xml {
+      background-color: #7986cb;
+      color: #fff;
+    }
+
+    .btn-xsl {
+      background-color: #f06292;
+      color: #fff;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .assignments-panel {
+        padding-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="info-panel">
+      <h1>Name: Raj Ashok Nikam</h1>
+      <p><strong>Roll No:</strong> 49</p>
+      <p><strong>Class:</strong> SY CSE</p>
+      <p><strong>Batch:</strong> S2</p>
+    </div>
+    <div class="assignments-panel">
+      <h2>My Assignments</h2>
+      <div class="buttons">
+        <a class="btn btn-html" href="html_assign.html">HTML</a>
+        <a class="btn btn-css" href="css_assign.html">CSS</a>
+        <a class="btn btn-xml" href="xml_assign.html">XML</a>
+        <a class="btn btn-xsl" href="xsl_assign.html">XSL</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
